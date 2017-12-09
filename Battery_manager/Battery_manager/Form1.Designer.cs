@@ -133,7 +133,6 @@
             this.NewTimeT.Name = "NewTimeT";
             this.NewTimeT.Size = new System.Drawing.Size(211, 26);
             this.NewTimeT.TabIndex = 8;
-            this.NewTimeT.TextChanged += new System.EventHandler(this.NewTimeT_TextChanged);
             // 
             // CurrentChargeL
             // 
