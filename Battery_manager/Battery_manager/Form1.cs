@@ -13,8 +13,8 @@ namespace Battery_Manager
 {
     public partial class Form1 : Form
     {
-        private static readonly Battery battery = new Battery();
-        private static readonly Regex timeExpression = new Regex(@"^\d+$");
+        private readonly Battery battery = new Battery();
+        private readonly Regex timeExpression = new Regex(@"^\d+$");
 
         public Form1()
         {
@@ -67,11 +67,6 @@ namespace Battery_Manager
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             battery.SetNewTime(battery.PreviousTime);
-        }
-
-        private void NewTimeT_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
